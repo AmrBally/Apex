@@ -1,0 +1,53 @@
+.direct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.direct .directContent {
+  width: 50%;
+}
+
+.direct h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.direct p {
+  line-height: 1.8;
+}
+
+.direct .ratingBox {
+  display: flex;
+  margin-top: 50px;
+}
+.direct .ratingBox .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.direct .ratingBox .rating span {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .direct {
+    flex-direction: column;
+  }
+  .direct img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .direct div h2 {
+    font-size: 30px;
+  }
+  .direct .ratingBox .rating p {
+    font-size: 10px;
+  }
+  .direct .directContent {
+    width: 100%;
+  }
+}

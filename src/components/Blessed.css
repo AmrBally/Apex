@@ -1,0 +1,60 @@
+.blessed {
+  background-image: url("../images/backgbleesed.png");
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 80px;
+}
+
+.blessed h1 {
+  margin: 25px auto;
+  color: #eeeeee;
+}
+
+.blessed .blessedContainer {
+  display: flex;
+  margin-top: 45px;
+}
+
+.blessed .box .first {
+  background-color: aliceblue;
+  padding: 20px;
+  position: relative;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+.blessed .box .first::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 10px solid;
+  border-color: #eeeeee transparent transparent transparent;
+}
+
+.blessed .first h6 {
+  color: #fd6003;
+}
+
+.blessed .box .sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-align: left;
+}
+.blessed .box .sec img {
+  margin-right: 20px;
+}
+
+.blessed .box .sec div span {
+  display: block;
+  color: #eeeeee;
+}
+
+@media (max-width: 768px) {
+  .blessedContainer {
+    flex-direction: column;
+  }
+}

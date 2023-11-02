@@ -1,0 +1,28 @@
+.meet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.meet div {
+  margin: auto;
+}
+.meet div h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .meet {
+    flex-direction: column;
+  }
+  .meet img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .meet div h2 {
+    font-size: 30px;
+  }
+}

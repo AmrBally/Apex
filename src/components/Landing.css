@@ -1,0 +1,59 @@
+.landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 100%;
+}
+.landingContent {
+  width: 100%;
+}
+
+.landingContent h1 {
+  margin-bottom: 20px;
+}
+
+.landingContent Button {
+  background-color: #fd6003;
+  color: aliceblue;
+  margin-bottom: 80px;
+}
+.landingContent Button:hover {
+  background-color: #fb8e0b;
+  color: aliceblue;
+}
+.landingContent Button span {
+  font-weight: bold;
+}
+.landingContent .cust {
+  display: flex;
+  align-items: center;
+}
+
+.landingContent .cust .first {
+  width: 2px;
+  height: 40px;
+  background-color: black;
+  margin: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  .landing {
+    flex-direction: column;
+  }
+  .landingContent .cust {
+    justify-content: center;
+  }
+  .landingContent .cust img {
+    width: 40%;
+  }
+  .landingContent .cust :last-child {
+    width: 30%;
+  }
+  .landing .image img {
+    width: 100%;
+  }
+  .landingContent Button {
+    margin-bottom: 10px;
+  }
+}
